@@ -1,0 +1,375 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Font */
+body {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #1f1b3f;
+  color: #ffffff;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* Header with Background Image */
+@keyframes moveBackground {
+  0% {
+    background-position: center;
+  }
+  50% {
+    background-position: top;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+/* Header with Background Image */
+header {
+  background-color: #2b244f;
+  padding: 120px 0;
+  text-align: center;
+  background: url("image/pixel2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: moveBackground 15s infinite alternate ease-in-out; /* Background animation */
+}
+
+/* Optional: Add overlay effect */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(43, 36, 79, 0.7); /* Overlay with opacity */
+  z-index: -1; /* Sends the overlay behind the content */
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+/* Navbar Container */
+.navbar-container {
+  background-color: rgba(175, 2, 255, 0.7);
+  padding: 15px 0; /* Space around the navbar */
+  position: sticky; /* Navbar stays at the top when scrolling */
+  top: 0;
+  z-index: 999; /* Keeps the navbar above other elements */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3a3aaf; /* Dark blue, to match your poster theme */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-family: "Press Start 2P", sans-serif; /* Optional retro font */
+}
+
+.nav-button:hover {
+  background-color: #5b5be1; /* Lighter shade of blue for hover */
+}
+
+/* Hover and Glow Effect */
+.navbar ul li a:hover {
+  color: #ff0080;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Glow effect on focus or active state */
+.navbar ul li a:focus,
+.navbar ul li a.active {
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
+  border-radius: 5px;
+}
+
+/* Poster Section */
+#poster {
+  text-align: center;
+  padding: 40px 0;
+}
+
+#poster img {
+  max-width: 10%;
+  height: auto;
+  border: 3px solid #ff0080;
+  box-shadow: 0 0 20px #ff0080;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* About the Exhibition Section */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Space between text and image */
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+  padding: 40px 20px; /* Adds padding around the section */
+  margin: 0 auto; /* Center the content */
+  max-width: 1200px; /* Ensures the section has the same width as the container */
+}
+
+.about-text,
+.about-image {
+  flex: 1; /* Text and image take equal space */
+  padding: 20px; /* Add padding to avoid content touching the edges */
+}
+
+.about-text p {
+  font-size: 1.1em; /* Ensures readability */
+  line-height: 1.6;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border: 0px solid #ff0080;
+  box-shadow: 0 0 40px #ff0080;
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #2b244f;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1em;
+  color: #ff0080;
+}
+.navbar ul li a:hover {
+  color: #ff0080;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
+  background-color: rgba(255, 5, 197, 0.2);
+  border-radius: 5px;
+}
+
+/* Projects page with filter cards*/
+
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #ffecfa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+
+#mainPageButton {
+  margin-top: 50px;
+}
+
+button.active {
+  background: #ff0080;
+  color: #ffffff;
+}
+
+.filterable-cards {
+  display: flex;
+  margin-top: 25px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ff81c6;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.filterable-cards .card {
+  width: 22rem;
+}
+
+.card.hide {
+  display: none;
+}
+
+.card .img {
+  width: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 15px 20px 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-text {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Live Feed Section */
+#live-feed {
+  padding: 30px;
+  background-color: #2d2d60;
+  color: #ffffff;
+  text-align: center;
+}
+
+.video-box {
+  margin: 20px auto;
+  width: 640px;
+  max-width: 100%;
+  border: 4px solid #5b5be1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px #000;
+}
+
+/* Progress Gallery Section */
+#progress-gallery {
+  padding: 30px;
+  background-color: #3a3aaf;
+  color: #ffffff;
+  text-align: center;
+}
+
+#progress-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#progress-gallery .gallery-item {
+  background-color: #5b5be1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0px #000;
+  overflow: hidden;
+}
+
+#progress-gallery .gallery-item img,
+#progress-gallery .gallery-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+#progress-gallery .gallery-item:hover img,
+#progress-gallery .gallery-item:hover video {
+  transform: scale(1.05);
+}
+
+/* ~~~~~~~~~~~~ Media queries ~~~~~~~~~~~~~~~~~*/
+
+@media ((max-width: 650px) and (min-width:370px)) {
+  header {
+    width: 160vw;
+  }
+
+  .navbar-container {
+    width: 160vw;
+  }
+
+  section {
+    width: 160vw;
+  }
+
+  footer {
+    width: 160vw;
+  }
+}
+
+@media (max-width: 369px) {
+  header {
+    width: 180vw;
+  }
+
+  .navbar-container {
+    width: 180vw;
+  }
+  section {
+    width: 180vw;
+  }
+
+  footer {
+    width: 180vw;
+  }
+}

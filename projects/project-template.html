@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Template - Press Play</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Press Play</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#artists">Featured Artists</a></li>
+          <li><a href="#event">Event</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="project">
+        <h2>Project Submission</h2>
+
+        <div class="student-profile">
+          <h3>Student Profile</h3>
+          <label for="profile-image">Profile Image URL:</label>
+          <input
+            type="text"
+            id="profile-image"
+            placeholder="Enter URL for profile image"
+          />
+
+          <div class="profile-image-preview">
+            <img
+              id="profile-preview"
+              src=""
+              alt="Profile Image"
+              style="display: none"
+            />
+          </div>
+        </div>
+
+        <div class="artist-statement">
+          <h3>Artist Statement</h3>
+          <textarea
+            id="artist-statement"
+            rows="4"
+            placeholder="Write your artist statement here..."
+          ></textarea>
+        </div>
+
+        <div class="portfolio-link">
+          <h3>Portfolio Link</h3>
+          <input
+            type="text"
+            id="portfolio-link"
+            placeholder="Enter your portfolio URL"
+          />
+        </div>
+
+        <div class="project-gallery">
+          <h3>Project Image Gallery</h3>
+          <label for="project-images">Image URLs (comma-separated):</label>
+          <input
+            type="text"
+            id="project-images"
+            placeholder="Enter URLs for project images"
+          />
+          <div class="gallery-preview" id="gallery-preview"></div>
+        </div>
+
+        <button id="submit">Submit Project</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Press Play BFA Exhibition | All Rights Reserved</p>
+    </footer>
+
+    <script>
+      // Function to preview profile image
+      document
+        .getElementById("profile-image")
+        .addEventListener("input", function () {
+          const imageUrl = this.value;
+          const profilePreview = document.getElementById("profile-preview");
+          profilePreview.src = imageUrl;
+          profilePreview.style.display = imageUrl ? "block" : "none";
+        });
+
+      // Function to preview project images
+      document
+        .getElementById("project-images")
+        .addEventListener("input", function () {
+          const imageUrls = this.value.split(",").map((url) => url.trim());
+          const galleryPreview = document.getElementById("gallery-preview");
+          galleryPreview.innerHTML = "";
+
+          imageUrls.forEach((url) => {
+            if (url) {
+              const img = document.createElement("img");
+              img.src = url;
+              img.alt = "Project Image";
+              img.style.width = "100px"; // Adjust the size as needed
+              img.style.margin = "5px";
+              galleryPreview.appendChild(img);
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
