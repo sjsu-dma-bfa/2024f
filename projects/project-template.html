@@ -3,113 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Template - Press Play</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Student Name - Project</title>
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>Press Play</h1>
-      <nav>
+    <header></header>
+
+    <div class="navbar-container">
+      <nav class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#artists">Featured Artists</a></li>
-          <li><a href="#event">Event</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/index.html" class="nav-button">Home</a></li>
+          <li><a href="/event.html" class="nav-button">Event</a></li>
+          <li><a href="/works.html" class="nav-button">Works</a></li>
+          <li><a href="/about.html" class="nav-button">About</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
 
     <main>
-      <section id="project">
-        <h2>Project Submission</h2>
+      <div id="project" class="container">
+        <h1 class="artwork-detail">
+          Project Title
+        </h1>
 
-        <div class="student-profile">
-          <h3>Student Profile</h3>
-          <label for="profile-image">Profile Image URL:</label>
-          <input
-            type="text"
-            id="profile-image"
-            placeholder="Enter URL for profile image"
-          />
+        <section class="project-container">
+          <!-- Artist Statement Section -->
+          <section class="artwork-detail">
+            <h2>Artist Statement</h2>
+            <p>
+              Description
+              <br />
+              Next Paragraph Desicription
+            </p>
+          </section>
 
-          <div class="profile-image-preview">
-            <img
-              id="profile-preview"
-              src=""
-              alt="Profile Image"
-              style="display: none"
-            />
+          <!-- Project Image Gallery Section -->
+          <section class="project-gallery">
+            <div class="artwork-images">
+              <img
+                src="/images/first-lastname/image.png"
+                alt="image description"
+                loading="lazy"
+              />
+              <img
+                src="/images/first-lastname/image.png"
+                alt="image description"
+                loading="lazy"
+              />
+              <img
+                src="/images/first-lastname/image.png"
+                alt="image description"
+                loading="lazy"
+              />
+              <img
+                src="/images/first-lastname/image.png"
+                alt="image description"
+                loading="lazy"
+              />
+            </div>
+          </section>
+        </section>
+
+        <section class="student-profile">
+          <div class="profile-container">
+            <!-- First Column: Profile Image with Name -->
+            <div class="profile-image-container">
+              <h3>Student Name</h3>
+              <img
+                src="/images/first-lastname/image.png"
+                alt="Student Name"
+              />
+            </div>
+        </section>
+
+            <!-- Bio and Contact Details Section -->
+            <section class="bio-contact-table-container">
+            <table class="bio-contact-table">
+              <tr>
+                <td class="bio-title">Bio</td>
+                <td class="bio-detail">
+Description
+                </td>
+              </tr>
+              <tr>
+                <td class="contact-title">Contact</td>
+                <td class="contact-detail">
+                  <a href="/portfolio.html" class="portfolio-button"
+                    >View Portfolio</a
+                  >
+                  <div class="social-icons">
+                    <a
+                      href="mailto:name@gmail.com"
+                      class="icon"
+                      aria-label="Email"
+                    >
+                      <i class="fas fa-envelope"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/username/"
+                      class="icon"
+                      aria-label="Instagram"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a
+                      href="https://vimeo.com/username"
+                      class="icon"
+                      aria-label="Vimeo"
+                    >
+                      <i class="fab fa-vimeo-v"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/username"
+                      class="icon"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            </section>
           </div>
-        </div>
-
-        <div class="artist-statement">
-          <h3>Artist Statement</h3>
-          <textarea
-            id="artist-statement"
-            rows="4"
-            placeholder="Write your artist statement here..."
-          ></textarea>
-        </div>
-
-        <div class="portfolio-link">
-          <h3>Portfolio Link</h3>
-          <input
-            type="text"
-            id="portfolio-link"
-            placeholder="Enter your portfolio URL"
-          />
-        </div>
-
-        <div class="project-gallery">
-          <h3>Project Image Gallery</h3>
-          <label for="project-images">Image URLs (comma-separated):</label>
-          <input
-            type="text"
-            id="project-images"
-            placeholder="Enter URLs for project images"
-          />
-          <div class="gallery-preview" id="gallery-preview"></div>
-        </div>
-
-        <button id="submit">Submit Project</button>
-      </section>
     </main>
 
     <footer>
       <p>&copy; 2024 Press Play BFA Exhibition | All Rights Reserved</p>
     </footer>
 
-    <script>
-      // Function to preview profile image
-      document
-        .getElementById("profile-image")
-        .addEventListener("input", function () {
-          const imageUrl = this.value;
-          const profilePreview = document.getElementById("profile-preview");
-          profilePreview.src = imageUrl;
-          profilePreview.style.display = imageUrl ? "block" : "none";
-        });
-
-      // Function to preview project images
-      document
-        .getElementById("project-images")
-        .addEventListener("input", function () {
-          const imageUrls = this.value.split(",").map((url) => url.trim());
-          const galleryPreview = document.getElementById("gallery-preview");
-          galleryPreview.innerHTML = "";
-
-          imageUrls.forEach((url) => {
-            if (url) {
-              const img = document.createElement("img");
-              img.src = url;
-              img.alt = "Project Image";
-              img.style.width = "100px"; // Adjust the size as needed
-              img.style.margin = "5px";
-              galleryPreview.appendChild(img);
-            }
-          });
-        });
-    </script>
   </body>
 </html>

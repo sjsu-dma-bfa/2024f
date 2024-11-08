@@ -1,11 +1,13 @@
-/* General Reset */
+/* -------------- General Reset -------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Global Font */
+/* ===================== GLOBAL STYLING (BODY, CONTAINER, SECTION, TEXT, FOOTER ===================== */
+
+/* -------------- Global Font -------------- */
 body {
   font-family: "Press Start 2P", "Courier New", monospace;
   font-style: normal;
@@ -14,14 +16,53 @@ body {
   color: #ffffff;
 }
 
-/* Container Styling */
+/* -------------- Container Styling -------------- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 50px;
 }
 
-/* Header with Background Image */
+/* -------------- Section Styles -------------- */
+
+.section {
+  padding: 60px 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  /* font-size: 2em; */
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: "Fascinate Inline", system-ui;
+  /* font-size: 32px; */
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-family: "Unica One", serif;
+}
+
+/* -------------- Footer Styling -------------- */
+footer {
+  background-color: #2b244f;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 1em;
+  color: #ff0080;
+}
+
+/* ===================== HEADER BACKGROUND STYLING ===================== */
+
+/* -------------- Header with Background Image -------------- */
 @keyframes moveBackground {
   0% {
     background-position: center;
@@ -34,7 +75,6 @@ body {
   }
 }
 
-/* Header with Background Image */
 header {
   background-color: #2b244f;
   padding: 120px 0;
@@ -44,10 +84,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  animation: moveBackground 15s infinite alternate ease-in-out; /* Background animation */
+  animation: moveBackground 15s infinite alternate ease-in-out;
 }
 
-/* Optional: Add overlay effect */
 header::before {
   content: "";
   position: absolute;
@@ -56,7 +95,7 @@ header::before {
   right: 0;
   bottom: 0;
   background-color: rgba(43, 36, 79, 0.7); /* Overlay with opacity */
-  z-index: -1; /* Sends the overlay behind the content */
+  z-index: -1;
 }
 
 header h1 {
@@ -65,20 +104,24 @@ header h1 {
   letter-spacing: 2px;
 }
 
-/* Navbar Container */
+/* ===================== GLOBAL NAVBAR STYLING ===================== */
+
+/* -------------- Navbar Styling -------------- */
 .navbar-container {
-  background-color: rgba(175, 2, 255, 0.7);
-  padding: 15px 0; /* Space around the navbar */
-  position: sticky; /* Navbar stays at the top when scrolling */
+  /* background-color: rgba(175, 2, 255, 0.7); */
+  background-color: #2b244f;
+
+  padding: 15px 0;
+  position: sticky;
   top: 0;
-  z-index: 999; /* Keeps the navbar above other elements */
+  z-index: 999;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: abosulte; /* or absolute */
 }
 
 .navbar ul {
@@ -95,195 +138,211 @@ header h1 {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
-  padding: 10px 20px;
+  padding: 10px 25px;
   transition: all 0.5s ease;
-  position: relative;
+  font-family: "Unica One", serif;
 }
 
 .nav-button {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #3a3aaf;
   color: #fff;
-  background-color: #3a3aaf; /* Dark blue, to match your poster theme */
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  font-family: "Press Start 2P", sans-serif; /* Optional retro font */
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #000;
 }
 
 .nav-button:hover {
-  background-color: #5b5be1; /* Lighter shade of blue for hover */
+  background-color: #5b5be1;
 }
 
-/* Hover and Glow Effect */
 .navbar ul li a:hover {
   color: #ff0080;
   box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
-  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
-/* Glow effect on focus or active state */
-.navbar ul li a:focus,
-.navbar ul li a.active {
-  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
-  border-radius: 5px;
-}
+/* ===================== ABOUT PAGE ===================== */
 
-/* Poster Section */
-#poster {
-  text-align: center;
-  padding: 40px 0;
-}
-
-#poster img {
-  max-width: 10%;
-  height: auto;
-  border: 3px solid #ff0080;
-  box-shadow: 0 0 20px #ff0080;
-}
-
-/* Section Styles */
-.section {
-  padding: 60px 20px;
-}
-
-h2 {
-  font-size: 2em;
-  color: #ffffff;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-/* About the Exhibition Section */
+/* -------------- About Section -------------- */
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px; /* Space between text and image */
-  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
-  padding: 40px 20px; /* Adds padding around the section */
-  margin: 0 auto; /* Center the content */
-  max-width: 1200px; /* Ensures the section has the same width as the container */
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .about-text,
 .about-image {
-  flex: 1; /* Text and image take equal space */
-  padding: 20px; /* Add padding to avoid content touching the edges */
+  flex: 1;
+  padding: 20px;
 }
 
 .about-text p {
-  font-size: 1.1em; /* Ensures readability */
+  font-size: 1.1em;
   line-height: 1.6;
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
-  border: 0px solid #ff0080;
+  border: 0;
   box-shadow: 0 0 40px #ff0080;
-  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 12px; /* Adds rounded corners */
 }
 
-/* Footer Styling */
-footer {
-  background-color: #2b244f;
+/* -------------- Instagram Button Styling -------------- */
+.btn-instagram {
+  display: inline-block;
+  background-color: #ff0080; /* Instagram pink color */
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 5px;
   text-align: center;
+  transition: background-color 0.3s ease;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.btn-instagram:hover {
+  background-color: #e6006e; /* Darker pink for hover effect */
+  box-shadow: 0 0 10px rgba(255, 0, 128, 0.5);
+}
+
+/* -------------- Credits Section -------------- */
+
+#credits {
+  padding: 60px 20px;
+  background-color: #5b5be1;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 4px 4px 0px #000;
+}
+
+#credits h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.credits-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.credits-table td {
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-family: "Unica One", serif;
+
+  /* border-radius: 12px; Adds rounded corners */
+}
+
+.credits-table td:first-child {
+  font-weight: bold;
+  text-align: left;
+  width: 40%;
+}
+
+.credits-table td:last-child {
+  text-align: left;
+}
+
+.credits-table tr:nth-child(even) {
+  background-color: #6841a2;
+}
+
+/* ===================== HOME PAGE ===================== */
+
+/* -------------- Home Poster -------------- */
+
+#home-p .home-p-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
   padding: 20px;
 }
 
-footer p {
-  font-size: 1em;
-  color: #ff0080;
-}
-.navbar ul li a:hover {
-  color: #ff0080;
-  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
-  background-color: rgba(255, 5, 197, 0.2);
-  border-radius: 5px;
+.home-p-image img {
+  max-width: 300px; /* Limits the image size */
+  width: 100%; /* Makes it responsive within its container */
+  height: auto;
+  border-radius: 12px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow for a polished look */
 }
 
-/* Projects page with filter cards*/
+/* -------------- Coming Soon Section Styling -------------- */
+#coming-soon {
+  text-align: center;
+  padding: 40px;
+  /* background-color: #f3f3f3; */
+  background-color: #e7e2e5;
 
-.filter-buttons {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: #ffecfa;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  font-family: "Press Start 2P", "Courier New", monospace;
-}
-
-#mainPageButton {
-  margin-top: 50px;
-}
-
-button.active {
-  background: #ff0080;
-  color: #ffffff;
-}
-
-.filterable-cards {
-  display: flex;
-  margin-top: 25px;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: #ff81c6;
-  padding: 3px;
   border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 4px 4px 0px #000;
 }
 
-.filterable-cards .card {
-  width: 22rem;
+#coming-soon h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #3a3aaf;
+  margin-bottom: 10px;
 }
 
-.card.hide {
-  display: none;
-}
-
-.card .img {
-  width: 10px;
-  border-radius: 8px 8px 0 0;
-}
-
-.card-body {
-  padding: 15px 20px 20px;
-}
-
-.card-title {
-  font-size: 20px;
-  font-weight: 500;
+#coming-soon h2 {
+  font-size: 1.8em;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.card-text {
-  font-size: 18px;
-  color: #333;
+#coming-soon p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 30px;
 }
 
-/* Live Feed Section */
+/* -------------- Countdown Timer Styling -------------- */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#countdown div {
+  background-color: #3a3aaf;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  min-width: 80px;
+  box-shadow: 4px 4px 0px #000;
+  font-family: "Unica One", serif;
+}
+
+#countdown div span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#countdown div small {
+  font-size: 0.8em;
+}
+
+/* ===================== EVENTS PAGE ===================== */
+
+/* -------------- Live Feed Section -------------- */
 #live-feed {
   padding: 30px;
   background-color: #2d2d60;
@@ -301,7 +360,7 @@ button.active {
   box-shadow: 4px 4px 0px #000;
 }
 
-/* Progress Gallery Section */
+/* -------------- Progress Gallery Section -------------- */
 #progress-gallery {
   padding: 30px;
   background-color: #3a3aaf;
@@ -329,47 +388,372 @@ button.active {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #progress-gallery .gallery-item:hover img,
 #progress-gallery .gallery-item:hover video {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
 }
 
-/* ~~~~~~~~~~~~ Media queries ~~~~~~~~~~~~~~~~~*/
+/* ===================== WORKS PAGE ===================== */
 
-@media ((max-width: 650px) and (min-width:370px)) {
-  header {
-    width: 160vw;
-  }
-
-  .navbar-container {
-    width: 160vw;
-  }
-
-  section {
-    width: 160vw;
-  }
-
-  footer {
-    width: 160vw;
-  }
+/* -------------- Projects Page with Filter Buttons -------------- */
+.filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* margin-bottom: 40px; */
 }
 
-@media (max-width: 369px) {
-  header {
-    width: 180vw;
+button {
+  padding: 10px 20px;
+  font-family: "Unica One", serif;
+  font-size: 18px;
+  background: #ffecfa;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.3s ease;
+}
+
+button.active {
+  background: #ff0080;
+  color: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* #mainPageButton {
+  margin-top: 50px;
+} */
+
+/* -------------- Project Grid Image Gallery -------------- */
+
+.filterable-cards {
+  display: flex;
+  margin-top: 25px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  width: 22rem;
+  background-color: #5b5be1;
+  padding: 10px;
+  box-shadow: 4px 4px 0px #000;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+  background-color: #3a3aaf;
+  color: #ffffff;
+  text-align: center;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  /* box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 30px rgba(255, 0, 128, 0.4); */
+}
+
+.overlay {
+  position: absolute;
+  top: 0; /* Covers the entire image */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  font-size: 1.5em;
+  border-radius: 8px; /* Matches the image's rounded corners */
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff0080;
+  font-family: "Fascinate Inline", system-ui;
+}
+
+.card.hide {
+  display: none;
+}
+
+/* ===================== STUDENT PROJECT PAGE ===================== */
+
+/* -------------- General styles for artwork description section -------------- */
+.artwork-detail {
+  background-color: #2b244f;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.artwork-detail h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  font-family: "Ribeye Marrow", serif;
+}
+
+/* 
+.artwork-detail h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+} */
+
+/* -------------- Project Gallery Styling -------------- */
+.project-gallery {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.artwork-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.artwork-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 4px 4px 0px #000;
+}
+
+.artwork-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------- Profile Section -------------- */
+.student-profile {
+  display: flex; /* Use flexbox to position the profile image and bio/contact table next to each other */
+  justify-content: flex-start; /* Align the items to the left */
+  gap: 30px; /* Space between the profile image and bio/contact table */
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column; /* Stack profile image and name vertically */
+  align-items: center;
+  gap: 15px;
+  flex: 1; /* Allow profile image container to take up remaining space */
+}
+
+/* Profile Image Styling */
+.profile-image-container {
+  text-align: center;
+}
+
+.profile-image-container h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.profile-image-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ff0080;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.6);
+}
+
+/* -------------- Bio & Contact Section -------------- */
+.bio-contact-container {
+  display: flex; /* Align bio-contact table next to profile */
+  flex-direction: column; /* Stack table rows vertically */
+  flex: 2; /* Allow the bio/contact container to take up more space */
+}
+
+/* Table Styles */
+.bio-contact-table {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: "Ribeye Marrow", serif;
+  table-layout: auto; /* Allow the table to adjust column widths */
+}
+
+/* Title Column Styling */
+.bio-contact-table td.bio-title,
+.bio-contact-table td.contact-title {
+  width: 10%; /* Make title column narrower */
+  padding: 10px 15px;
+  font-weight: bold;
+  vertical-align: top;
+  /* box-shadow: 4px 4px 0px #000; */
+}
+
+/* Details Column Styling */
+.bio-contact-table td.bio-detail,
+.bio-contact-table td.contact-detail {
+  padding: 10px 15px;
+  /* box-shadow: 4px 4px 0px #000; */
+  font-family: "Unica One", serif;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: left;
+  display: flex;
+  width: 100%; /* Increase width of the details column to take more space */
+}
+
+/* Title Column Styling  */
+.bio-title,
+.contact-title {
+  font-weight: bold;
+}
+
+/* Details Column */
+.bio-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bio-detail,
+.contact-detail {
+  padding: 10px;
+  font-family: "Unica One", serif;
+  /* box-shadow: 4px 4px 0px #000; */
+}
+
+.bio-contact-details p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* -------------- Portfolio Section -------------- */
+
+.portfolio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0080;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 4px 4px 0px #000;
+  font-family: "Unica One", serif;
+}
+
+.portfolio-button:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 2.5em;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ff0080;
+}
+
+/* -------------- Media Queries for Responsiveness -------------- */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
   }
 
-  .navbar-container {
-    width: 180vw;
-  }
-  section {
-    width: 180vw;
+  header h1 {
+    font-size: 1.5em;
   }
 
-  footer {
-    width: 180vw;
+  .section {
+    padding: 20px;
+  }
+
+  /* Nav Bar */
+  .navbar ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* About Page */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .credits-table td {
+    padding: 8px;
+    font-size: 1em;
+  }
+
+  /* Home Page */
+  .home-p-image img {
+    max-width: 100%; /* Makes the image full-width for smaller screens */
+    width: auto; /* Overrides fixed width for better responsiveness */
+  }
+
+  /* Works Page */
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    padding: 20px;
+  }
+
+  .profile-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .bio-contact-details {
+    margin-top: 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }

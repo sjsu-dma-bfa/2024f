@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the interactive and immersive world of digital media in 'Press Play,' a BFA Digital Media Exhibition showcasing cutting-edge work from talented artists."
+    />
+
+    
+    <title>Press Play - BFA Digital Media Exhibition</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+    </header>
+    
+    <div class="navbar-container">
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html" class="nav-button">Home</a></li>
+          <li><a href="event.html" class="nav-button">Event</a></li>
+          <li><a href="works.html" class="nav-button">Works</a></li>
+          <li><a href="about.html" class="nav-button">About</a></li>
+        </ul>
+      </nav>
+    </div>
+   
+    <!-- Main Content -->
+    <main>
+      <section id="about" class="section">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About the Exhibition</h2>
+            <p>
+              This hello everyone exhibition showcases the most amazing retro-inspired pixel art,
+              blending nostalgia with modern-day creativity. The art pieces range from
+              vibrant landscapes to intricate character designs, each bringing the charm of
+              pixel art to life.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/control.png" alt="About the Exhibition Image">
+        </div>
+      </section>
+
+    <!-- Coming Soon Section -->
+    <section id="coming-soon">
+      <div class="content">
+        <h1>Press Play</h1>
+        <h2>Coming Soon</h2>
+        <p>
+          We're excited to share our BFA Digital Media Exhibition with you!
+          Check back on <strong>November 16, 2024</strong> for the full
+          experience.
+        </p>
+
+        <!-- Optional Countdown Timer -->
+        <div id="countdown">
+          <div><span id="days"></span><small>Days</small></div>
+          <div><span id="hours"></span><small>Hours</small></div>
+          <div><span id="minutes"></span><small>Minutes</small></div>
+          <div><span id="seconds"></span><small>Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Countdown Timer JavaScript
+      const eventDate = new Date("November 16, 2024 18:00:00").getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = eventDate - now;
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+
+        if (timeLeft < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("countdown").innerHTML =
+            "The event has started!";
+        }
+      }
+
+      const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+
+      <!-- Events Section -->
+      <section id="events" class="section">
+        <div class="container">
+          <h2>Event</h2>
+          <p>
+            Don't miss our BFA D exhibition. More details will be available
+            soon.<br />
+            <strong
+              >SJSU Fall 2024 Digital Media Arts | BFA Final Exhibition</strong
+            ><br />
+            Time: November 16, 2024 6:00PM - 9:00PM<br />
+            Location: Hammer Theatre
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            If you'd like more information or have any questions, feel free to
+            reach out via Instagram. This is where we will post any updates and
+            announcements about the event.<br />
+            <a href="https://www.instagram.com/pressplaybfa/" target="_blank"
+              >Instagram</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <!-- Credits Section -->
+      <section id="credits" class="section">
+        <div class="container">
+          <h2>Credits</h2>
+          <ul class="credits-list">
+            <li>
+              Web Design Managers:
+              <strong
+                >Hanz Pacheco, Jozey Nguyen, Kyle Helstowski, Ryan Chong</strong
+              >
+            </li>
+            <li>
+              Design Managers:
+              <strong
+                >Ana Schwartz, Lylian Thao, Naomi Colin, Qiaoxin Deng</strong
+              >
+            </li>
+            <li>
+              Press Managers:
+              <strong>Kwame Glover, Laney Saechao, Sabrina Cordera</strong>
+            </li>
+            <li>
+              Installation Managers:
+              <strong
+                >Alicia Chi, Archie Rock, Kimberly Layco, Rachel Cave</strong
+              >
+            </li>
+            <li>
+              Reception Managers:
+              <strong>Jaymian Bustos, Luis Rodriguez, Niyana Sanders</strong>
+            </li>
+            <li>
+              Layout Managers:
+              <strong
+                >Annabella Dunkerley, Aonee McDonald, Eddie Martinez</strong
+              >
+            </li>
+            <li>
+              Equipment & Files Managers:
+              <strong>Matt Pearson, Anshu Ravi, Siying Liang</strong>
+            </li>
+            <li>
+              Exhibition Text Managers:
+              <strong
+                >Annie He, Ryan Leatigaga, Seigfred Causin, Phuc Le</strong
+              >
+            </li>
+            <li>
+              Document & Signage Managers:
+              <strong>Daniel Perez Gomez, Marisa Diaz, Ricky Nguyen</strong>
+            </li>
+            <li>
+              Faculty Advisors: <strong>David Bayus, James Morgan</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Press Play BFA Exhibition | All Rights Reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
