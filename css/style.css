@@ -79,7 +79,7 @@ header {
   background-color: #2b244f;
   padding: 120px 0;
   text-align: center;
-  background: url("image/pixel2.png");
+  background: url("image/pressplaymain.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,19 +168,113 @@ header h1 {
 
 /* ===================== ABOUT PAGE ===================== */
 
-/* -------------- About Section -------------- */
+/* General Section Styling for Consistency */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* About Section */
 .about-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
   flex-wrap: wrap;
 }
 
+/* About Text and Image Styling */
 .about-text,
 .about-image {
   flex: 1;
+  padding: 10px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.about-image img {
+  max-width: 900%; /* Increase image size */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+  cursor: pointer; /* Indicate that the image is clickable */
+}
+
+/* Lightbox effect */
+.image-lightbox {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.image-lightbox img:hover {
+  box-shadow: 0 0 30px rgba(255, 0, 128, 0.4); /* Highlight on hover */
+}
+
+/* Consistent Styling for Other Sections */
+.concept-container, 
+.vision-container, 
+.join-container, 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
+  text-align: center;
+}
+
+.concept-container h2, 
+.vision-container h2, 
+.join-container h2, 
+.contact-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.concept-container p, 
+.vision-container p, 
+.join-container p, 
+.contact-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+/* About Video Section */
+.about-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.about-video video {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+/* If the about-video container needs more width on large screens */
+.about-video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .about-text p {
@@ -189,7 +283,7 @@ header h1 {
 }
 
 .about-image img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   border: 0;
   box-shadow: 0 0 40px #ff0080;
