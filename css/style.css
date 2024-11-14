@@ -79,7 +79,7 @@ header {
   background-color: #2b244f;
   padding: 120px 0;
   text-align: center;
-  background: url("image/pressplaymain.png");
+  background: url("image/pressplaymain1.3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,9 +100,16 @@ header::before {
 
 header h1 {
   color: #ffffff;
-  font-size: 2.5em;
-  letter-spacing: 2px;
+  font-size: 6em; /* Increased size for a more prominent title */
+  font-family: 'Press Start 2P', cursive; /* Pixel-style font */
+  letter-spacing: 4px; /* Increased letter spacing for better readability */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  z-index: 1; /* Ensure the title is above the overlay */
 }
+
 
 /* ===================== GLOBAL NAVBAR STYLING ===================== */
 
@@ -257,24 +264,21 @@ header h1 {
 /* About Video Section */
 .about-video {
   width: 100%;
+  max-width: 1200px; /* Ensures container width remains consistent */
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  margin: 20px auto; /* Centers the container horizontally */
+  padding: 0 20px; /* Adds padding to prevent any side alignment shift */
+  box-sizing: border-box; /* Ensures padding doesn’t affect the width */
 }
 
 .about-video video {
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%; /* Ensures video stays within container bounds */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
-}
-
-/* If the about-video container needs more width on large screens */
-.about-video {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .about-text p {
