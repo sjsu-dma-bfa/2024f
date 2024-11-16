@@ -628,6 +628,7 @@ button:hover {
 .project-gallery {
   margin: 40px 0;
   text-align: center;
+  justify-content: center;
 }
 
 .artwork-images {
@@ -853,4 +854,12 @@ button:hover {
   .social-icons {
     justify-content: center;
   }
+}
+
+
+/* Custom settings for project pages */
+
+#Sabrina-Video{
+ justify-content: center;
+
 }
