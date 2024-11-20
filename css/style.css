@@ -654,6 +654,8 @@ button:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* -------------- Clickable Images/Videos - Zoom -------------- */
+
 /* Lightbox Background */
 .lightbox {
   display: none;
@@ -829,20 +831,27 @@ button:hover {
   box-shadow: 0 0 15px rgba(255, 0, 128, 0.7), 0 0 25px rgba(255, 0, 128, 0.4);
 }
 
+/* -------------- Social Icons -------------- */
+
 .social-icons {
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
+  justify-content: center; /* Center align the icons */
+  gap: 25px; /* Space between icons */
+  margin: 20px 20px; /* Add spacing around the section */
+  padding: 0px 20px;
 }
 
-.icon {
-  font-size: 2.5em;
-  color: #ffffff;
-  transition: color 0.3s ease;
+.social-icons a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* Icon color */
+  font-size: 40px; /* Adjust size of icons */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.icon:hover {
-  color: #ff0080;
+.social-icons a:hover {
+  color: #ff0080; /* Change color on hover */
+  transform: scale(1.2); /* Slightly enlarge icon on hover */
+  box-shadow: 1px rgba(255, 0, 128, 0.7), 2px rgba(255, 0, 128, 0.4);
 }
 
 /* -------------- Media Queries for Responsiveness -------------- */
