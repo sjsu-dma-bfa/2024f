@@ -7,8 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
       rel="stylesheet"
     />
-
-    <title>Student Name - Project</title>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+    <title>Alicia Chi - Project</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -45,43 +48,103 @@
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-
-              <!-- video in images folder
-                -->
-              <video width="320" height="240" controls>
-                <source src="../videos/first-lastname/name.mp4" type="video/mp4">
-                Description if needed.
-              </video>
-
-              <!-- or a video link instead -->
-
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" 
-        title="Dreamscape Video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
-              
+              <!-- Clickable Images -->
+              <a href="#flower-bed-lightbox">
+                <img
+                  src="../images/alicia-chi/"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+              <a href="#fullmoon-cliff-lightbox">
+                <img
+                src="../images/alicia-chi/"
+                alt=""
+                  loading="lazy"
+                />
+              </a>
+              <a href="#floating-isles-lightbox">
+                <img
+                src="../images/alicia-chi/"
+                alt=""
+                  loading="lazy"
+                />
+              </a>
+              <a href="#moonlit-forest-lightbox">
+                <img
+                src="../images/alicia-chi/"
+                alt=""
+                  loading="lazy"
+                />
+              </a>
+              <a href="#cityscape-lightbox">
+                <img
+                src="../images/alicia-chi/"
+                alt=""
+                  loading="lazy"
+                />
+              </a>
+            
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/alicia-chi/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
             </div>
+            
+            <!-- Lightbox for Images -->
+            <div id="flower-bed-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/alicia-chi/.png" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="fullmoon-cliff-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/alicia-chi/.png" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="floating-isles-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/alicia-chi/.png" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="moonlit-forest-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/alicia-chi/.png" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="cityscape-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/alicia-chi/cityscape.png" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/alicia-chi/.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
           </section>
         </section>
 
@@ -91,8 +154,8 @@
             <div class="profile-image-container">
               <h3>Student Name</h3>
               <img
-                src="../images/first-lastname/image.png"
-                alt="Student Name"
+                src="../images/alicia-chi/alicia-chi.png"
+                alt="Alicia Chi"
               />
             </div>
         </section>
@@ -109,9 +172,10 @@ Description
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
-                  <a href="../portfolio.html" class="portfolio-button"
+                  <div>                  
+                    <a href="https://joko28.github.io/portfolio/index.html" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div>
                   <div class="social-icons">
                     <a
                       href="mailto:name@gmail.com"

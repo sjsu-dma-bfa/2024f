@@ -45,7 +45,7 @@ h3 {
 p {
   font-size: 1.1em;
   line-height: 1.6;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
 }
 
 /* -------------- Footer Styling -------------- */
@@ -116,7 +116,6 @@ header h1 {
 .navbar-container {
   /* background-color: rgba(175, 2, 255, 0.7); */
   background-color: #2b244f;
-
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -146,7 +145,7 @@ header h1 {
   font-size: 1.1rem;
   padding: 10px 25px;
   transition: all 0.5s ease;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
 }
 
 .nav-button {
@@ -339,8 +338,7 @@ header h1 {
   padding: 10px;
   font-size: 1.1em;
   line-height: 1.6;
-  font-family: "Unica One", serif;
-
+  font-family: "Darker Grotesque", serif;
   /* border-radius: 12px; Adds rounded corners */
 }
 
@@ -424,7 +422,7 @@ header h1 {
   font-size: 1.2em;
   min-width: 80px;
   box-shadow: 4px 4px 0px #000;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
 }
 
 #countdown div span {
@@ -507,7 +505,7 @@ header h1 {
 
 button {
   padding: 10px 20px;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
   font-size: 18px;
   background: #ffecfa;
   border: none;
@@ -617,11 +615,9 @@ button:hover {
   font-family: "Ribeye Marrow", serif;
 }
 
-/* 
-.artwork-detail h4 {
-  font-size: 1.5em;
-  margin-bottom: 40px;
-} */
+.artwork-detail p {
+  font-size: 1.2em;
+}
 
 /* -------------- Project Gallery Styling -------------- */
 .project-gallery {
@@ -777,7 +773,7 @@ button:hover {
 .bio-contact-table td.contact-detail {
   padding: 10px 15px;
   /* box-shadow: 4px 4px 0px #000; */
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
   font-size: 1.2em;
   line-height: 1.6;
   text-align: left;
@@ -801,7 +797,7 @@ button:hover {
 .bio-detail,
 .contact-detail {
   padding: 10px;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
   /* box-shadow: 4px 4px 0px #000; */
 }
 
@@ -818,12 +814,12 @@ button:hover {
   background-color: #ff0080;
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.3em;
   border-radius: 8px;
   transition: all 0.3s ease;
   margin-top: 20px;
   box-shadow: 4px 4px 0px #000;
-  font-family: "Unica One", serif;
+  font-family: "Darker Grotesque", serif;
 }
 
 .portfolio-button:hover {
