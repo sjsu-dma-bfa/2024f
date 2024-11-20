@@ -45,33 +45,102 @@
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-
-              <!-- video in images folder
-                -->
-              <video width="320" height="240" controls>
-                <source src="../videos/first-lastname/name.mp4" type="video/mp4">
-                Description if needed.
-              </video>
+              <!-- Clickable Images -->
+              <a href="#flower-bed-lightbox">
+                <img
+                  src="../images/jozey-nguyen/flower-bed.png"
+                  alt="Flower Bed"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#fullmoon-cliff-lightbox">
+                <img
+                  src="../images/jozey-nguyen/fullmoon-cliff.png"
+                  alt="Fullmoon Cliff"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#floating-isles-lightbox">
+                <img
+                  src="../images/jozey-nguyen/floating-isles.png"
+                  alt="Floating Isles"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#moonlit-forest-lightbox">
+                <img
+                  src="../images/jozey-nguyen/moonlit-forest.png"
+                  alt="Moonlit Forest"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#cityscape-lightbox">
+                <img
+                  src="../images/jozey-nguyen/cityscape.png"
+                  alt="Cityscape"
+                  loading="lazy"
+                />
+              </a>
+            
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/jozey-nguyen/JN_WolfsJourney-WalkThroughDreamscapes.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+            </div>
+            
+            <!-- Lightbox for Images -->
+            <div id="flower-bed-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/jozey-nguyen/flower-bed.png" alt="Flower Bed" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="fullmoon-cliff-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/jozey-nguyen/fullmoon-cliff.png" alt="Fullmoon Cliff" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="floating-isles-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/jozey-nguyen/floating-isles.png" alt="Floating Isles" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="moonlit-forest-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/jozey-nguyen/moonlit-forest.png" alt="Moonlit Forest" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="cityscape-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/jozey-nguyen/cityscape.png" alt="Cityscape" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/jozey-nguyen/JN_WolfsJourney-WalkThroughDreamscapes.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
 
               <!-- or a video link instead -->
 
