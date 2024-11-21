@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Unica+One&display=swap" rel="stylesheet">
-  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Press Play - BFA Digital Media Exhibition</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-    </header>
-    
+    <header></header>
+
     <div class="navbar-container">
       <nav class="navbar">
         <ul>
@@ -24,73 +25,19 @@
         </ul>
       </nav>
     </div>
-   
+
     <!-- Main Content -->
     <main>
-
-    <!-- Coming Soon Section -->
-    <section id="coming-soon">
-      <div class="content">
-        <h1>Press Play</h1>
-        <h2>Coming Soon</h2>
-        <p>
-          We're excited to share our BFA Digital Media Exhibition with you!
-          Check back on <strong>November 16, 2024</strong> for the full
-          experience.
-        </p>
-
-        <!-- Optional Countdown Timer -->
-        <div id="countdown">
-          <div><span id="days"></span><small>Days</small></div>
-          <div><span id="hours"></span><small>Hours</small></div>
-          <div><span id="minutes"></span><small>Minutes</small></div>
-          <div><span id="seconds"></span><small>Seconds</small></div>
-        </div>
+      <div class="container">
+        <h1>PRESS PLAY</h1>
       </div>
-    </section>
+    </main>
 
-    <!-- <section id="home-p" class="section">
-      <div class="home-p-container">
-        <div class="home-p-image">
-          <img src="images/control.png" alt="About the Exhibition Image">
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Press Play BFA Exhibition | All Rights Reserved</p>
       </div>
-    </section> -->
-
-        <!-- Footer -->
-        <footer>
-          <div class="container">
-            <p>&copy; 2024 Press Play BFA Exhibition | All Rights Reserved</p>
-          </div>
-        </footer>
-        
-    <script>
-      // Countdown Timer JavaScript
-      const eventDate = new Date("November 16, 2024 18:00:00").getTime();
-
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const timeLeft = eventDate - now;
-
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById("days").textContent = days;
-        document.getElementById("hours").textContent = hours;
-        document.getElementById("minutes").textContent = minutes;
-        document.getElementById("seconds").textContent = seconds;
-
-        if (timeLeft < 0) {
-          clearInterval(countdownInterval);
-          document.getElementById("countdown").innerHTML =
-            "The event has started!";
-        }
-      }
-
-      const countdownInterval = setInterval(updateCountdown, 1000);
-    </script>
+    </footer>
   </body>
 </html>
