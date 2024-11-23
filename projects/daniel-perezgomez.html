@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
     <title>Daniel Perez Gomez - Renegade</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -44,22 +44,77 @@
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/daniel-perezgomez/SCENE A.png"
-                alt="image description"
+
+              <!-- Clickable Images -->
+              <a href="#SCENE-A-lightbox">
+                <img
+                src="../images/daniel-perezgomez/SCENE-A.png"
+                alt="SCENE-A"
                 loading="lazy"
               />
-              <img
-                src="../images/daniel-perezgomez/SCENE B.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/daniel-perezgomez/SCENE C.png"
-                alt="image description"
-                loading="lazy"
-              />
+              </a>
             
+              <a href="#SCENE-B-lightbox">
+                <img
+                src="../images/daniel-perezgomez/SCENE-B.png"
+                alt="SCENE-B"
+                loading="lazy"
+              />
+              </a>
+              
+              <a href="#SCENE-C-lightbox">
+              <img
+                src="../images/daniel-perezgomez/SCENE-C.png"
+                alt="SCENE-C"
+                loading="lazy"
+              />
+              </a>
+
+              <!-- Clickable Video -->
+              <!-- <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/archie-rock/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+            </div> -->
+            
+            <!-- Lightbox for Images -->
+            <div id="SCENE-A-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/daniel-perezgomez/SCENE-A.png" alt="SCENE-A" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="SCENE-B-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/daniel-perezgomez/SCENE-B.png" alt="SCENE-B" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="SCENE-C-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/daniel-perezgomez/SCENE-C.png" alt="SCENE-C" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div> 
+               
+            <!-- Lightbox for Video -->
+            <!-- <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/daniel-perezgomez/"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div> -->
               
             </div>
           </section>
@@ -71,8 +126,8 @@
             <div class="profile-image-container">
               <h3>Daniel Perez Gomez</h3>
               <img
-                src="../images/daniel-perezgomez/Profile Photo.jpg"
-                alt="Student Name"
+                src="../images/daniel-perezgomez/daniel-perezgomez.jpg"
+                alt="Daniel Perez Gomez"
               />
             </div>
         </section>
@@ -89,10 +144,11 @@
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <div>
                   <a href="https://danielpg21.github.io/DanielPG_Portfolio/" class="portfolio-button"
                     >View Portfolio</a
-                  >
-                  <div class="social-icons">
+                  ></div>
+                  <!-- <div class="social-icons">
                     <a
                       href="mailto:name@gmail.com"
                       class="icon"
@@ -121,7 +177,7 @@
                     >
                       <i class="fab fa-linkedin-in"></i>
                     </a>
-                  </div>
+                  </div> -->
                 </td>
               </tr>
             </table>

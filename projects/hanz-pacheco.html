@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Hanz Pacheco - Project</title>
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+    <title>Hanz Pacheco - Digital Realms: Journey to 3D World </title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -17,11 +17,12 @@
     <div class="navbar-container">
       <nav class="navbar">
         <ul>
-          <li><a href="/index.html" class="nav-button">Home</a></li>
-          <li><a href="/event.html" class="nav-button">Event</a></li>
-          <li><a href="/works.html" class="nav-button">Works</a></li>
-          <li><a href="/about.html" class="nav-button">About</a></li>
-        </ul>
+          <ul>
+            <li><a href="../index.html" class="nav-button">Home</a></li>
+            <li><a href="../event.html" class="nav-button">Event</a></li>
+            <li><a href="../works.html" class="nav-button">Works</a></li>
+            <li><a href="../about.html" class="nav-button">About</a></li>
+          </ul>
       </nav>
     </div>
 
@@ -43,54 +44,60 @@
               allowing me to build immersive worlds that aren’t just visually engaging 
               but evoke a sense of place and atmosphere.
 
-              <br />
+              <br /><br>
               Digital Realm: Journey to 3D Worlds consists of different 3D environment scenes I created in Blender. 
               I want to exhibit my technical abilities as a 3D artist 
               and also allow people to explore my story as an artist. 
-
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="/images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/first-lastname/image.png"
-                alt="image description"
-                loading="lazy"
-              />
 
-              <!-- video in images folder
-                -->
-              <video width="320" height="240" controls>
-                <source src="/videos/first-lastname/name.mp4" type="video/mp4">
-                Description if needed.
-              </video>
-
-              <!-- or a video link instead -->
-
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" 
-        title="Dreamscape Video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
-              
+              <!-- Clickable Images -->
+              <a href="#name-lightbox">
+                <img
+                  src="../images/name/"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+    
+            
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/name/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
             </div>
+            
+            <!-- Lightbox for Images -->
+            <div id="name-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/name/" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/alicia-chi/.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+              
           </section>
         </section>
 
@@ -100,8 +107,8 @@
             <div class="profile-image-container">
               <h3>Hanz Pacheco</h3>
               <img
-                src="/images/hanz-pacheco/hanz-pacheco.jpg"
-                alt="Student Name"
+                src="/images/hanz-pacheco/hanz-pacheco.png"
+                alt="Hanz Pacheco"
               />
             </div>
         </section>
@@ -111,42 +118,34 @@
             <table class="bio-contact-table">
               <tr>
                 <td class="bio-title">Bio</td>
-
-
                 <td class="bio-detail">
-                I am a Filipino 3D artist, my main focus is environment and asset modeling.
+                  I'm Hanz Pacheco, a Filipino 3D artist based in San Francisco, California. I always strive to create environments that tell stories rich with textures, light, and intricate details that have evolved organically over time.
                 </td>
               </tr>
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <!-- <div>
                   <a href="/portfolio.html" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div> -->
                   <div class="social-icons">
                     <a
-                      href="mailto:name@gmail.com"
+                      href="mailto:hanz.pacheco@sjsu.edu"
                       class="icon"
                       aria-label="Email"
                     >
                       <i class="fas fa-envelope"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/username/"
+                      href="https://www.instagram.com/hanzarts/?hl=en"
                       class="icon"
                       aria-label="Instagram"
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
                     <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
+                      href="www.linkedin.com/in/hanz-pacheco-774638155"
                       class="icon"
                       aria-label="LinkedIn"
                     >

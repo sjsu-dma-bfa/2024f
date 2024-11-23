@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
     <title>Kimberly Layco - Burnout</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -37,23 +37,89 @@
             <h2>Artist Statement</h2>
             <p>
               “Burnout” is a series of short animations that loop over time and show various feelings of burnout in a surrealistic way. Burnout can leave people feeling dissociative and out of touch with reality so I wanted to bring those feelings into my pieces by creating an unreal environment with strange events happening. These five short animations will show some of the experiences that I went through when experiencing burnout but in a fantastical way.  
-              <br>
+              <br><br>
               I will be switching between using Blender, Adobe Substance Painter, and Adobe Premiere Pro while creating my work so that I can seamlessly create an animation that can convey how burnout can feel. My animations will be drawing inspiration from some of my favorite artworks by Salvador Dali and Zdzslaw Beksinski.
               The hustle and grind culture has swept the nation and everyone around me worked themselves to the bone to get stuff done. Whether for work, personal projects, or school, everyone was always busy and filling their schedules. Eventually, these schedules wear people down and they are left with exhaustion or burnout. This happened to me a while ago for many years and I want people to be cautious when exerting themselves and to remember that stress can accumulate over time. This is why I am creating my piece called, “Burnout”.
-              
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
-            <div>
-       
-
-              <iframe width="1203" height="602" src="https://www.youtube.com/embed/VG0USXT7BCc" title="Burnout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-         
-              
+            <div class="artwork-images">
+              <!-- Clickable Images -->
+              <a href="#name-lightbox">
+                <img
+                  src="../images/name/"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+    
+            
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/name/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
             </div>
+            
+            <!-- Lightbox for Images -->
+            <div id="name-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/name/" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            
+            <!-- Lightbox for Video -->
+
+            <!-- Lightbox Container -->
+<div id="video-lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <!-- Embed YouTube Video (External Link) -->
+    <iframe
+      id="lightbox-video-frame"
+      <!-- width="1203"
+      height="602" -->
+      src=""
+      title="Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="display: none;"
+    ></iframe>
+
+    <!-- Local Video -->
+    <video id="lightbox-local-video" controls autoplay style="display: none;">
+      <source src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Close Button -->
+    <a href="#" class="close-lightbox">&times;</a>
+  </div>
+</div>
+
+            <!-- <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/kimberly-layco/Burnout.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div> -->
+
+            <!-- <div>
+              <iframe width="1203" height="602" src="https://www.youtube.com/embed/VG0USXT7BCc" title="Burnout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div> -->
+
           </section>
         </section>
 
