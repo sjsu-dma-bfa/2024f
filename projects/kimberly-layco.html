@@ -47,74 +47,51 @@
           <section class="project-gallery">
             <div class="artwork-images">
               <!-- Clickable Images -->
-              <a href="#name-lightbox">
+              <a href="#burnout-lightbox">
                 <img
-                  src="../images/name/"
-                  alt=""
+                  src="../images/kimberly-layco/burnout.png"
+                  alt="burnout"
                   loading="lazy"
                 />
               </a>
     
-            
-              <!-- Clickable Video -->
-              <a href="#video-lightbox">
-                <video class="video" muted>
-                  <source
-                    src="../images/name/"
-                    type="video/mp4"
-                  />
-                </video>
-              </a>
-            </div>
+<!-- Clickable YouTube Video Thumbnail -->
+<!-- <div class="video-gallery"> -->
+  <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
+    <img
+      class="video-thumbnail"
+      src="https://img.youtube.com/vi/VG0USXT7BCc/0.jpg"
+      alt="YouTube Thumbnail"
+    />
+  </a>
+<!-- </div> -->
+
             
             <!-- Lightbox for Images -->
-            <div id="name-lightbox" class="lightbox">
+            <div id="burnout-lightbox" class="lightbox">
               <div class="lightbox-content">
-                <img src="../images/name/" alt="" />
+                <img src="../images/kimberly-layco/burnout.png" alt="burnout" />
                 <a href="#" class="close-lightbox">&times;</a>
               </div>
             </div>
             
-            
-            <!-- Lightbox for Video -->
 
-            <!-- Lightbox Container -->
-<div id="video-lightbox" class="lightbox">
+<!-- Lightbox for YouTube Video -->
+<div id="youtube-lightbox" class="lightbox">
   <div class="lightbox-content">
-    <!-- Embed YouTube Video (External Link) -->
     <iframe
-      id="lightbox-video-frame"
-      <!-- width="1203"
-      height="602" -->
-      src=""
-      title="Video"
+      class="youtube-iframe"
+      src="https://www.youtube.com/embed/VG0USXT7BCc"
+      title="YouTube Video"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
-      style="display: none;"
     ></iframe>
-
-    <!-- Local Video -->
-    <video id="lightbox-local-video" controls autoplay style="display: none;">
-      <source src="" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-
-    <!-- Close Button -->
     <a href="#" class="close-lightbox">&times;</a>
   </div>
 </div>
 
-            <!-- <div id="video-lightbox" class="lightbox">
-              <div class="lightbox-content">
-                <video controls autoplay>
-                  <source
-                    src="../images/kimberly-layco/Burnout.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
-            </div> -->
+
 
             <!-- <div>
               <iframe width="1203" height="602" src="https://www.youtube.com/embed/VG0USXT7BCc" title="Burnout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
