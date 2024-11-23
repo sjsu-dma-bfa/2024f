@@ -38,9 +38,9 @@
             <p>
               DISCONNECT is an animated video and poster series about anxiety. Each illustration represents a different feeling or metaphor people would associate with anxiety, such as the familiar feeling of having “butterflies in your stomach” or feeling like you’re drowning. There are four posters: Butterflies, Burn, Drown, and Fear. Each illustration is animated into a looped short video. The posters offer a still image for anyone who would like a closer look at each illustration. I hope to resonate with people with these interpretations of anxiety as it is something everyone has had at least once in their life, whether it’s anxiety from taking an exam, anxiety for a job interview, work, family, etc. Anxiety is a universal experience that we all share. 
 
-              <br />
+              <br /><br>
               The illustrations were digitally drawn using Medibang Paint Pro and animated in After Effects.
-              <br>
+              <br><br>
 This series has allowed me to explore various concepts for each theme in my interpretations. My work focuses on 2D digital drawings and concept art, which gives me the freedom to experiment. It also serves as a means for me to express myself as someone who better conveys my feelings through drawings and writing. With DISCONNECT, I aim to present my conceptual ideas related to different aspects of anxiety.
             </p>
           </section>
@@ -48,36 +48,87 @@ This series has allowed me to explore various concepts for each theme in my inte
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/annie-he/BURN.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/annie-he/BUTTERFLIES.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/annie-he/DROWNING.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="../images/annie-he/FEAR.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              
-             
-              
-            </div>
-            <div>
- <!-- video in images folder
-                -->
-                <iframe width="481" height="855" src="https://www.youtube.com/embed/McPv5Wz4sZ0" title="DISCONNECT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+             <!-- Clickable Images -->
+              <a href="#burn-lightbox">
+                <img
+                src="../images/annie-he/BURN.jpg"
+                  alt="Burn"
+                  loading="lazy"
+                />
+              </a>
+              <a href="#butterflies-lightbox">
+                <img
+                src="../images/annie-he/BUTTERFLIES.jpg"
+                alt="Butterflies"
+                loading="lazy"
+              />
+              </a>
+              <a href="#drowning-lightbox">
+                <img
+                src="../images/annie-he/DROWNING.jpg"
+                alt="Drowning"
+                loading="lazy"
+              />
+              </a>
+              <a href="#fear-lightbox">
+                <img
+                src="../images/annie-he/FEAR.jpg"
+                alt="Fear"
+                loading="lazy"
+              />
+              </a>
+
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/annie-he/DISCONNECT-VIDEO.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
             </div>
+              
+             <!-- Lightbox for Images -->
+            <div id="burn-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annie-he/BURN.jpg" alt="Burn" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            <div id="butterflies-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annie-he/BUTTERFLIES.jpg" alt="Butterflies" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            <div id="drowning-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annie-he/DROWNING.jpg" alt="Drowning" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            <div id="fear-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annie-he/FEAR.jpg" alt="Fear" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/annie-he/DISCONNECT-VIDEO.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
           </section>
         </section>
 
@@ -87,8 +138,8 @@ This series has allowed me to explore various concepts for each theme in my inte
             <div class="profile-image-container">
               <h3>Annie He</h3>
               <img
-                src="../images/annie-he/Annie He.jpg"
-                alt="Student Name"
+                src="../images/annie-he/annie-he.jpg"
+                alt="Annie He"
               />
             </div>
         </section>
@@ -106,9 +157,10 @@ This series has allowed me to explore various concepts for each theme in my inte
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <!-- <div>                  
                   <a href="https://www.instagram.com/lady_aeria/" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div> -->
                   <div class="social-icons">
                     <a
                       href="ladyaeria0@gmail.com"
@@ -124,20 +176,7 @@ This series has allowed me to explore various concepts for each theme in my inte
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
-                      class="icon"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
+
                   </div>
                 </td>
               </tr>

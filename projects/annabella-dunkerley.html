@@ -28,7 +28,7 @@
     <main>
       <div id="project" class="container">
         <h1 class="artwork-detail">
-          Project Title
+          Woodland Wanderers
         </h1>
 
         <section class="project-container">
@@ -36,37 +36,68 @@
           <section class="artwork-detail">
             <h2>Artist Statement</h2>
             <p>
-              Annabella is a digital artist who blends different digital techniques and styles in her work. She enjoys combining illustration with 3D design and creating videos. Her passion for digital art began with her love of video games and animated movies, which inspired her to create 3D art and video projects. Her goal is to design unique characters and environments. Annabella’s projects are technology-driven and utilize a variety of digital tools and techniques.
-           
+              Set in a dense forest during a storm, this 3D animated short film follows the journey of small creatures navigating through a challenging environment. Their adventure is a reflection of how we, too must confront unexpected changes and obstacles. At the end of the journey, new and exciting things often await the end of the path.
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/annabella-dunkerley/Woodland Wanderers.png"
-                alt="image description"
+               <!-- Clickable Images -->
+              <a href="#woodland-wanderers-lightbox">
+               <img
+                src="../images/annabella-dunkerley/Woodland-Wanderers.png"
+                alt="Woodland-Wanderers"
                 loading="lazy"
               />
-       
+              </a>
+              <a href="#woodland_wanderers_sculpture-lightbox">
+                <img
+                src="../images/annabella-dunkerley/woodland_wanderers_sculpture.png"
+                alt="woodland_wanderers_sculpture"
+                  loading="lazy"
+                />
+              </a>
 
-              <!-- video in images folder
-              
-              <video width="320" height="240" controls>
-                <source src="../videos/first-lastname/name.mp4" type="video/mp4">
-                Description if needed.
-              </video>
-
-           
-
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" 
-        title="Dreamscape Video" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>  -->
-              
+               <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/annabella-dunkerley/Annabella-Dunkerley-Woodland-Wanderers.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
             </div>
+              
+            <!-- Lightbox for Images -->
+            <div id="woodland-wanderers-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annabella-dunkerley/Woodland-Wanderers.png" alt="Woodland-Wanderers" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="woodland_wanderers_sculpture-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/annabella-dunkerley/woodland_wanderers_sculpture.png" alt="woodland_wanderers_sculpture" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/annabella-dunkerley/Annabella-Dunkerley-Woodland-Wanderers.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
           </section>
         </section>
 
@@ -76,8 +107,8 @@
             <div class="profile-image-container">
               <h3>Anabella Dunkerley</h3>
               <img
-                src="../images/annabella-dunkerley/Annabella Dunkerley.png"
-                alt="Student Name"
+                src="../images/annabella-dunkerley/annabella-dunkerley.png"
+                alt="Anabella Dunkerley"
               />
             </div>
         </section>
@@ -94,38 +125,26 @@
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <div>                  
                   <a href="https://annabella-dunkerley-online-portfolio.glitch.me/" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div>
                   <div class="social-icons">
                     <a
-                      href="mailto:name@gmail.com"
+                      href="mailto:annabelladunkerley@gmail.com"
                       class="icon"
                       aria-label="Email"
                     >
                       <i class="fas fa-envelope"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/username/"
+                      href="https://www.instagram.com/_art_of_annabella_/"
                       class="icon"
                       aria-label="Instagram"
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
-                      class="icon"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
+
                   </div>
                 </td>
               </tr>
