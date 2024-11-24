@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Kyle Helstowski - Atheltic Arts</title>
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+    <title>Kyle Helstowski - Athletic Arts</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -37,37 +37,154 @@
             <h2>Artist Statement</h2>
             <p>
               In Athletic Arts, I explore the intersection between athleticism and artistic expression through a series of posters and video. Soccer, a sport often defined by speed and physicality, also holds a creative element in its players movements. Each poster in this series visualizes movement as an art form, such like a player striking the ball, their shadow forming the shape of a dancer mid-performance, or an athlete feinting, capturing the split-second decisions that misdirect opponents. These visual elements reveal the strategy, and creativity behind each movement. Accompanying the posters, a looping video displays real-life clips of soccer players using these same techniques, underscoring how these motions are similar to the finesse of a dance. Through this work, I invite viewers to see the artistry present in athletic performance, where sports meet the aesthetics of motion.
-
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/kyle-helstowski/KYLE_HELSTOWSKI_POSTER1.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/kyle-helstowski/KYLE_HELSTOWSKI_POSTER2.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/kyle-helstowski/KYLE_HELSTOWSKI_POSTER3.jpg"
-                alt="image description"
-                loading="lazy"
-              />
-              <img
-                src="/images/kyle-helstowski/KYLE_HELSTOWSKI_POSTER4.jpg"
-                alt="image description"
-                loading="lazy"
-              />
 
-            
-              
+             <!-- Clickable Images -->
+               <a href="#poster1-lightbox">
+              <img
+                src="../images/kyle-helstowski/poster1.jpg"
+                alt="poster1"
+                loading="lazy"
+              />
+              </a>
+                
+              <a href="#poster2-lightbox">
+                <img
+                src="/images/kyle-helstowski/poster2.jpg"
+                alt="poster2"
+                loading="lazy"
+              />
+                </a>
+
+                <a href="#poster3-lightbox">
+                  <img
+                  src="/images/kyle-helstowski/poster3.jpg"
+                  alt="poster3"
+                  loading="lazy"
+                />
+                  </a>
+
+                  <a href="#poster4-lightbox">
+                    <img
+                    src="/images/kyle-helstowski/poster4.jpg"
+                    alt="poster4"
+                    loading="lazy"
+                  />
+                    </a>
+                        
+              <!-- Clickable Video -->
+            <a href="#video-lightbox">
+               <video class="video" muted>
+             <source
+               src="../images/kyle-helstowski/project-video.mp4"
+              type="video/mp4"
+               />
+               </video>
+                 </a>
+  
             </div>
+            
+                        <!-- Lightbox for Images -->
+                        <div id="poster1-lightbox" class="lightbox">
+                          <div class="lightbox-content" style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/poster1.jpg" alt="poster1" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+                        
+                        <div id="poster2-lightbox" class="lightbox">
+                          <div class="lightbox-content" style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/poster2.jpg" alt="poster2" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+                       
+                        <div id="poster3-lightbox" class="lightbox">
+                          <div class="lightbox-content" style="max-width: 450px; max-height: 650px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/poster3.jpg" alt="poster3" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+
+                        <div id="poster4-lightbox" class="lightbox">
+                          <div class="lightbox-content" style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/poster4.jpg" alt="poster4" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+                        
+                        <!-- Lightbox for Video -->
+                        <div id="video-lightbox" class="lightbox">
+                          <div class="lightbox-content">
+                            <video controls autoplay>
+                              <source
+                                src="../images/kyle-helstowski/project-video.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+
+             <br>
+
+<!-- Exhibition Images -->
+
+           <section class="artwork-detail">
+            <h2>Exhibition</h2>
+            </section>
+            <section class="project-gallery">
+              <div class="artwork-images">
+  
+               <!-- Clickable Images -->
+                 <a href="#showcase-image-lightbox">
+                <img
+                  src="../images/kyle-helstowski/showcase-image.jpg"
+                  alt="showcase-image"
+                  loading="lazy"
+                />
+                </a>
+
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/kyle-helstowski/video-showcase.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>             
+
+              </div>
+
+                        <!-- Lightbox for Images -->
+                        <div id="showcase-image-lightbox" class="lightbox">
+                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/showcase-image.jpg" alt="showcase-image" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+                
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/kyle-helstowski/video-showcase.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+                      </section>
+              
           </section>
         </section>
 
@@ -87,47 +204,18 @@
             <section class="bio-contact-table-container">
             <table class="bio-contact-table">
               <tr>
-                <td class="bio-title"></td>
+                <td class="bio-title">Bio</td>
                 <td class="bio-detail">
-
+                  Digital Media Artist from Sacramento, specializing in graphic art/design, motion graphics, and video effects. My work blends surrealism and bold graphic effects, and minimalism.
                 </td>
               </tr>
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
-                  <a href="/portfolio.html" class="portfolio-button"
+                  <div>
+                  <a href="https://kylehels.weebly.com/" class="portfolio-button"
                     >View Portfolio</a
-                  >
-                  <div class="social-icons">
-                    <a
-                      href="mailto:name@gmail.com"
-                      class="icon"
-                      aria-label="Email"
-                    >
-                      <i class="fas fa-envelope"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/username/"
-                      class="icon"
-                      aria-label="Instagram"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
-                      class="icon"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </div>
+                  ></div>
                 </td>
               </tr>
             </table>

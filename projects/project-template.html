@@ -45,6 +45,7 @@
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
+
               <!-- Clickable Images -->
               <a href="#name-lightbox">
                 <img
@@ -64,22 +65,30 @@
                   />
                 </video>
               </a>
-            </div>
             
-            <!-- Clickable YouTube Video -->
-<div class="video-gallery">
-  <a href="#youtube-lightbox">
+<!-- Clickable YouTube Video Thumbnail -->
+<!-- <div class="video-gallery"> -->
+  <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
     <img
       class="video-thumbnail"
-      src="https://img.youtube.com/vi/VIDEO_ID/0.jpg"
+      src="https://img.youtube.com/vi/VG0USXT7BCc/0.jpg"
       alt="YouTube Thumbnail"
     />
   </a>
+<!-- </div> -->
 </div>
+
 
             <!-- Lightbox for Images -->
             <div id="name-lightbox" class="lightbox">
               <div class="lightbox-content">
+                <img src="../images/name/" alt="" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="name-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 500px; max-height: 700px; border-radius: 50%;">
                 <img src="../images/name/" alt="" />
                 <a href="#" class="close-lightbox">&times;</a>
               </div>
@@ -99,15 +108,72 @@
               </div>
             </div>
             
-            <!-- Lightbox for Youtube -->
-            <a href="https://www.youtube.com/embed/VG0USXT7BCc" class="lightboxframe">
-              <img src="path-to-video-thumbnail.jpg" alt="Video Thumbnail" />
-            </a>
+<!-- Lightbox for YouTube Video -->
+<div id="youtube-lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <iframe
+      class="youtube-iframe"
+      src="https://www.youtube.com/embed/VG0USXT7BCc"
+      title="YouTube Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <a href="#" class="close-lightbox">&times;</a>
+  </div>
+</div>
 
-            <!-- Video Link -->
-            <div>
-              <iframe width="1203" height="602" src="https://www.youtube.com/embed/VG0USXT7BCc" title="Burnout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <br>
+
+           <section class="artwork-detail">
+            <h2>Exhibition</h2>
+            </section>
+            <section class="project-gallery">
+              <div class="artwork-images">
+  
+               <!-- Clickable Images -->
+                 <a href="#poster1-lightbox">
+                <img
+                  src="../images/kyle-helstowski/poster1.jpg"
+                  alt="poster1"
+                  loading="lazy"
+                />
+                </a>
+
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/name/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>                
+
+              </div>
+
+                        <!-- Lightbox for Images -->
+                        <div id="poster1-lightbox" class="lightbox">
+                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/kyle-helstowski/poster1.jpg" alt="poster1" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
+                
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/alicia-chi/.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
             </div>
+
+                      </section>
 
           </section>
         </section>
