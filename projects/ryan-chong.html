@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
     <title>Ryan Chong - Alone</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -17,10 +17,10 @@
     <div class="navbar-container">
       <nav class="navbar">
         <ul>
-          <li><a href="/index.html" class="nav-button">Home</a></li>
-          <li><a href="/event.html" class="nav-button">Event</a></li>
-          <li><a href="/works.html" class="nav-button">Works</a></li>
-          <li><a href="/about.html" class="nav-button">About</a></li>
+          <li><a href="../index.html" class="nav-button">Home</a></li>
+          <li><a href="../event.html" class="nav-button">Event</a></li>
+          <li><a href="../works.html" class="nav-button">Works</a></li>
+          <li><a href="../about.html" class="nav-button">About</a></li>
         </ul>
       </nav>
     </div>
@@ -37,20 +37,131 @@
             <h2>Artist Statement</h2>
             <p>
               Alone is a 3D Unity game telling a story of an alien coming to earth in pursuit of finding a place to belong. Using transformation, the alien attempts to fit in with other species but fails to coexist. This wildlife game is a representation of someone who has suffered from high levels of anxiety or fear of growing up. I've faced both of these hardships deeply. Negative feelings can mislead people into alienating themselves and believing that something is wrong with them. However, while everyone is unique, we are also the same. We are all animals within the world’s ecosystem. This game serves as a reminder to those who isolate themselves by their imperfections: remember, there are other people in the world who have felt the same way.
-             
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
+
+             <!-- Clickable Images -->
+             <a href="#Alone-project-lightbox">
               <img
                 src="../images/ryan-chong/Alone-project.png"
-                alt="image description"
+                alt="Alone-project"
                 loading="lazy"
               />
-              
+            </a>
+          
+            <!-- Clickable Video -->
+            <!-- <a href="#video-lightbox">
+              <video class="video" muted>
+                <source
+                  src="../images/ryan-chong/"
+                  type="video/mp4"
+                />
+              </video>
+            </a> -->
+          
+<!-- Clickable YouTube Video Thumbnail -->
+<!-- <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
+  <img
+    class="video-thumbnail"
+    src="https://img.youtube.com/vi/VG0USXT7BCc/0.jpg"
+    alt="YouTube Thumbnail"
+  />
+</a> -->
+</div>
+
+
+          <!-- Lightbox for Images -->
+          <div id="alone-project-lightbox" class="lightbox">
+            <div class="lightbox-content">
+              <img src="../images/ryan-chong/Alone-project.png" alt="Alone-project" />
+              <a href="#" class="close-lightbox">&times;</a>
             </div>
+          </div>  
+          
+          <!-- Lightbox for Video -->
+          <!-- <div id="video-lightbox" class="lightbox">
+            <div class="lightbox-content">
+              <video controls autoplay>
+                <source
+                  src="../images/ryan-chong/"
+                  type="video/mp4"
+                />
+              </video>
+              <a href="#" class="close-lightbox">&times;</a>
+            </div>
+          </div> -->
+          
+<!-- Lightbox for YouTube Video -->
+<!-- <div id="youtube-lightbox" class="lightbox">
+<div class="lightbox-content">
+  <iframe
+    class="youtube-iframe"
+    src="https://www.youtube.com/embed/VG0USXT7BCc"
+    title="YouTube Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+  <a href="#" class="close-lightbox">&times;</a>
+</div>
+</div> -->
+
+           <br>
+<!-- Exhibition Images -->
+         <section class="artwork-detail">
+          <h2>Exhibition</h2>
+          </section>
+          <section class="project-gallery">
+            <div class="artwork-images">
+
+             <!-- Clickable Images -->
+               <!-- <a href="#-lightbox">
+              <img
+                src="../images/ryan-chong/"
+                alt=""
+                loading="lazy"
+              />
+              </a> -->
+
+            <!-- Clickable Video -->
+            <!-- <a href="#video-lightbox">
+              <video class="video" muted>
+                <source
+                  src="../images/ryan-chong/"
+                  type="video/mp4"
+                />
+              </video>
+            </a>                 -->
+
+            </div>
+
+                      <!-- Lightbox for Images -->
+                      <!-- <div id="-lightbox" class="lightbox">
+                        <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                          <img src="../images/ryan-chong/" alt="" />
+                          <a href="#" class="close-lightbox">&times;</a>
+                        </div>
+                      </div> -->
+              
+          <!-- Lightbox for Video -->
+          <!-- <div id="video-lightbox" class="lightbox">
+            <div class="lightbox-content">
+              <video controls autoplay>
+                <source
+                  src="../images/ryan-chong/"
+                  type="video/mp4"
+                />
+              </video>
+              <a href="#" class="close-lightbox">&times;</a>
+            </div>
+          </div> -->
+
+                    </section>
+
           </section>
         </section>
 
@@ -61,7 +172,7 @@
               <h3>Ryan Chong</h3>
               <img
                 src="../images/ryan-chong/ryan-chong.png"
-                alt="Student Name"
+                alt="ryan-chong"
               />
             </div>
         </section>
@@ -70,40 +181,28 @@
             <section class="bio-contact-table-container">
             <table class="bio-contact-table">
               <tr>
-                <td class="bio-title"></td>
+                <td class="bio-title">Bio</td>
                 <td class="bio-detail">
+                  Ryan Chong is a Digital Media Artist focusing towards the mediums of game development and 3D Modeling. Playing countless hours of different games during childhood, Ryan's goal is to develop interactive and fun video games ranging from 2d pixel platformers to 3D immersive experiences. Ryan's work blends the imagination with reality, breathing the presence of life into the world's surroundings. Completed a Bachelors of Fine Arts from San Jose State University.
                 </td>
               </tr>
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <div>
                   <a href="https://comeasytoremembere.wixsite.com/portfolio/portfolio-collections/my-portfolio" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div>
                   <div class="social-icons">
                     <a
-                      href="mailto:name@gmail.com"
+                      href="mailto:rchong527@gmail.com"
                       class="icon"
                       aria-label="Email"
                     >
                       <i class="fas fa-envelope"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/username/"
-                      class="icon"
-                      aria-label="Instagram"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
+                      href="https://www.linkedin.com/in/ryan-chong-3260b22b0/"
                       class="icon"
                       aria-label="LinkedIn"
                     >

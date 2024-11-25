@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
     <title>Naomi Colin - NAOMI VISION</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -37,23 +37,133 @@
             <h2>Artist Statement</h2>
             <p>
               NAOMI VISION immerses users in a hyper-stylized AR shopping experience, where they’re drawn into a cyber-sci-fi world filled with overstimulating sale signs, futuristic sunglasses, and other accessories. As users collect items and head to a virtual checkout, they find that, in this world, they’ll never truly own what they desire. This endless, unfulfilled transaction mirrors the empty promises of consumerism, challenging viewers to rethink their relationship with material things. Through NAOMI VISION, I invite audiences to confront the allure of excess and consider that, perhaps, the most sustainable choice is to consume less.
-           
             </p>
           </section>
 
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/naomi-colin/NAOMI COLIN ---- NAOMI VISION .png"
-                alt="image description"
+
+ <!-- Clickable Images -->
+              <a href="#naomi-vision-lightbox">
+                <img
+                src="../images/naomi-colin/naomi-vision.png"
+                alt="naomi-vision"
                 loading="lazy"
               />
-      
+              </a>
+    
+            
+              <!-- Clickable Video -->
+              <!-- <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/naomi-colin/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a> -->
+            
+<!-- Clickable YouTube Video Thumbnail -->
+  <!-- <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
+    <img
+      class="video-thumbnail"
+      src="https://img.youtube.com/vi/VG0USXT7BCc/0.jpg"
+      alt="YouTube Thumbnail"
+    />
+  </a> -->
+</div>
 
+
+            <!-- Lightbox for Images -->
+            <div id="naomi-vision-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/naomi-colin/naomi-vision.png" alt="naomi-vision" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <!-- <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/naomi-colin/"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div> -->
+            
+<!-- Lightbox for YouTube Video -->
+<!-- <div id="youtube-lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <iframe
+      class="youtube-iframe"
+      src="https://www.youtube.com/embed/VG0USXT7BCc"
+      title="YouTube Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <a href="#" class="close-lightbox">&times;</a>
+  </div>
+</div> -->
+
+             <br>
+<!-- Exhibition Images -->
+           <section class="artwork-detail">
+            <h2>Exhibition</h2>
+            </section>
+            <section class="project-gallery">
+              <div class="artwork-images">
+  
+               <!-- Clickable Images -->
+                 <!-- <a href="#-lightbox">
+                <img
+                  src="../images/naomi-colin/"
+                  alt=""
+                  loading="lazy"
+                />
+                </a> -->
+
+              <!-- Clickable Video -->
+              <!-- <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/name/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>                 -->
+
+              </div>
+
+                        <!-- Lightbox for Images -->
+                        <!-- <div id="-lightbox" class="lightbox">
+                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/naomi-colin/" alt="" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div> -->
+                
+            <!-- Lightbox for Video -->
+            <!-- <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/naomi-colin/"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div> -->
+
+                      </section>
      
               
-            </div>
           </section>
         </section>
 
@@ -63,7 +173,7 @@
             <div class="profile-image-container">
               <h3>Naomi Colin</h3>
               <img
-                src="../images/naomi-colin/NAOMI VISION BIO PIC - Naomi Colin.jpg"
+                src="../images/naomi-colin/naomi-colin.png"
                 alt="Student Name"
               />
             </div>
@@ -81,9 +191,10 @@
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <div>
                   <a href="http://www.naomicolin.com" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div>
                   <div class="social-icons">
                     <a
                       href="naomi.colin@yahoo.com"
@@ -92,27 +203,7 @@
                     >
                       <i class="fas fa-envelope"></i>
                     </a>
-                    <a
-                      href="https://www.instagram.com/username/"
-                      class="icon"
-                      aria-label="Instagram"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
-                      class="icon"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
+
                   </div>
                 </td>
               </tr>

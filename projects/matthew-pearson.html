@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Fascinate+Inline&family=Ribeye+Marrow&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Ribeye+Marrow&family=Unica+One&display=swap"
-      rel="stylesheet"
-    />
-
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
     <title>Matthew Pearson - Beautiful on the Inside</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -37,10 +37,7 @@
             <h2>Artist Statement</h2>
             <p>
               Growing up I had always been interested in drawing more or less just to pass the time, but as I grew older I started to incorporate new interests into my drawings. One such new interest that has been prevalent in my drawings to this day is human anatomy. Starting with basic sketches of skeletons and eyeballs, I soon became enthralled with the entire build of the human body, along with all of its intricate details. I like to look beyond the average human form into the parts and pieces that all fit together to make that form.
-
-
-
-              <br />
+              <br /><br>
               I find the idea of mortality to be strangely comforting in that everything begins and everything ends, and it is through the human body that we get to experience everything in between. The body is versatile and complicated, composed of so many different parts and pieces that all fit together to create one whole cohesive being. Every body is different and special in its own way, and I find that illustrating human bodies helps to demonstrate that. 
             </p>
           </section>
@@ -48,54 +45,234 @@
           <!-- Project Image Gallery Section -->
           <section class="project-gallery">
             <div class="artwork-images">
-              <img
-                src="../images/pearson-matt/2ofHearts.png"
-                alt="image description"
+
+              <!-- Clickable Images -->
+              <a href="#2ofHearts-lightbox">
+                <img
+                src="../images/matt-pearson/2ofHearts.png"
+                alt="2ofHearts"
                 loading="lazy"
               />
-              <img
-                src="../images/pearson-matt/bodyofNature.png"
-                alt="image description"
+              </a>
+    
+              <a href="#bodyofNature-lightbox">
+                <img
+                src="../images/matt-pearson/bodyofNature.png"
+                alt="bodyofNature"
                 loading="lazy"
               />
-              <img
-                src="../images/pearson-matt/camo.png"
-                alt="image description"
+              </a>
+
+              <a href="#camo-lightbox">
+                <img
+                src="../images/matt-pearson/camo.png"
+                alt="camo"
                 loading="lazy"
               />
-              <img
-                src="../images/pearson-matt/embrace.png"
-                alt="image description"
+              </a>
+
+              <a href="#embrace-lightbox">
+                <img
+                src="../images/matt-pearson/embrace.png"
+                alt="embrace"
                 loading="lazy"
               />
-              <img
-              src="../images/pearson-matt/flowercage.png"
-              alt="image description"
-              loading="lazy"
-            />
-            <img
-            src="../images/pearson-matt/headspace.png"
-            alt="image description"
-            loading="lazy"
-          />
-          <img
-          src="../images/pearson-matt/lungflower.png"
-          alt="image description"
-          loading="lazy"
-        />
-        <img
-        src="../images/pearson-matt/treeform.png"
-        alt="image description"
-        loading="lazy"
-      />
+              </a>
+
+              <a href="#flowercage-lightbox">
+                <img
+                src="../images/matt-pearson/flowercage.png"
+                alt="flowercage"
+                loading="lazy"
+              />
+              </a>
+
+              <a href="#headspace-lightbox">
+                <img
+                src="../images/matt-pearson/headspace.png"
+                alt="headspace"
+                loading="lazy"
+              />
+              </a>
+
+              <a href="#lungflower-lightbox">
+                <img
+                src="../images/matt-pearson/lungflower.png"
+                alt="lungflower"
+                loading="lazy"
+              />
+              </a>
+            
+              <a href="#treeform-lightbox">
+                <img
+                src="../images/matt-pearson/treeform.png"
+                alt="treeform"
+                loading="lazy"
+              />
+              </a>
+              <!-- Clickable Video -->
+              <a href="#video-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/matt-pearson/Sequence 01_2.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+            
+<!-- Clickable YouTube Video Thumbnail -->
+<!-- <div class="video-gallery"> -->
+  <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
+    <img
+      class="video-thumbnail"
+      src="https://img.youtube.com/vi/l918HDiZpX4/0.jpg"
+      alt="YouTube Thumbnail"
+    />
+  </a>
+<!-- </div> -->
+</div>
 
 
+            <!-- Lightbox for Images -->
+            <div id="2ofHearts-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/2ofHearts.png" alt="2ofHearts" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <div id="bodyofNature-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 900px; max-height: 1000px; border-radius: 50%;">
+                <img src="../images/matt-pearson/bodyofNature.png" alt="bodyofNature" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="camo-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 900px; max-height: 1000px; border-radius: 50%;">
+                <img src="../images/matt-pearson/camo.png" alt="camo" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="embrace-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/embrace.png" alt="embrace" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="flowercage-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/flowercage.png" alt="flowercage" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="headspace-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/headspace.png" alt="headspace" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="lungflower-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/lungflower.png" alt="lungflower" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="treeform-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <img src="../images/matt-pearson/treeform.png" alt="treeform" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/matt-pearson/Sequence 01_2.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+<!-- Lightbox for YouTube Video -->
+<div id="youtube-lightbox" class="lightbox">
+  <div class="lightbox-content">
+    <iframe
+      class="youtube-iframe"
+      src="https://www.youtube.com/embed/l918HDiZpX4"
+      title="YouTube Video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <a href="#" class="close-lightbox">&times;</a>
+  </div>
+</div>
+
+             <br>
+<!-- Exhibition Images -->
+           <section class="artwork-detail">
+            <h2>Exhibition</h2>
+            </section>
+            <section class="project-gallery">
+              <div class="artwork-images">
   
-              
-            </div>
-            <div>
-              <iframe width="1903" height="782" src="https://www.youtube.com/embed/l918HDiZpX4" title="Beautiful on the Inside" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+               <!-- Clickable Images -->
+                 <!-- <a href="#-lightbox">
+                <img
+                  src="../images/matt-pearson/"
+                  alt=""
+                  loading="lazy"
+                />
+                </a> -->
+
+              <!-- Clickable Video -->
+              <!-- <a href="#video1-lightbox">
+                <video class="video" muted>
+                  <source
+                    src="../images/matt-pearson/"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>                 -->
+
+              </div>
+
+                        <!-- Lightbox for Images -->
+                        <!-- <div id="-lightbox" class="lightbox">
+                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
+                            <img src="../images/matt-pearson/" alt="" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div> -->
+                
+            <!-- Lightbox for Video -->
+            <!-- <div id="video1-lightbox" class="lightbox">
+              <div class="lightbox-content">
+                <video controls autoplay>
+                  <source
+                    src="../images/matt-pearson/"
+                    type="video/mp4"
+                  />
+                </video>
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div> -->
+
+                      </section>
+
+
+
+
           </section>
         </section>
 
@@ -105,7 +282,7 @@
             <div class="profile-image-container">
               <h3>Matthew Pearson</h3>
               <img
-                src="../images/pearson-matt/Profilepic.png"
+                src="../images/matt-pearson/matt-pearson.png"
                 alt="Student Name"
               />
             </div>
@@ -123,9 +300,10 @@
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
+                  <div>
                   <a href="https://www.artstation.com/mattpearson" class="portfolio-button"
                     >View Portfolio</a
-                  >
+                  ></div>
                   <div class="social-icons">
                     <a
                       href="Mattapmatt@gmail.com"
@@ -133,27 +311,6 @@
                       aria-label="Email"
                     >
                       <i class="fas fa-envelope"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/username/"
-                      class="icon"
-                      aria-label="Instagram"
-                    >
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
-                      class="icon"
-                      aria-label="LinkedIn"
-                    >
-                      <i class="fab fa-linkedin-in"></i>
                     </a>
                   </div>
                 </td>
