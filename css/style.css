@@ -638,13 +638,48 @@ button:hover {
   overflow: hidden;
   border-radius: 8px;
   margin: 0 auto;
-  display: flex;
+  position:relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 4px 4px 0px #000;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   object-fit: contain;
+}
+
+/* hover play button for video ================== */
+.play-button-image{
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  box-shadow: none;
+  filter: none;
+  background:none;
+}
+
+.video-thumbnail-wrapper img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-thumbnail-wrapper img.overlay {
+  pointer-events: none;
+  width: 50%; 
+  height: auto; 
+  position: absolute;
+  top: 5%; 
+  left: 25%; 
+  opacity: 1; 
+}
+
+.video-thumbnail-wrapper .overlay {
+  background: none; 
+  box-shadow: none;
 }
 
 /* Thumbnail Hover Effect */
@@ -681,6 +716,10 @@ button:hover {
 .close-lightbox:hover {
   background: rgba(255, 0, 128, 0.7);
 }
+
+
+
+
 
 /* -------------- Profile Section -------------- */
 .student-profile {
