@@ -80,14 +80,20 @@ This series has allowed me to explore various concepts for each theme in my inte
               </a>
 
               <!-- Clickable Video -->
-              <a href="#video-lightbox">
+              <a href="#video-lightbox"  class="video-thumbnail">
                 <video class="video" muted>
                   <source
                     src="../images/annie-he/DISCONNECT-VIDEO.mp4"
                     type="video/mp4"
                   />
                 </video>
-                
+                <img
+                class="overlay"
+                id="play-button-image"
+                src="../images/pink-play-button.png"
+                alt="pink play button" 
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;"
+              />
               </a>
             </div>
               
@@ -117,24 +123,10 @@ This series has allowed me to explore various concepts for each theme in my inte
               </div>
             </div>
 
-            
-            <!-- Lightbox for Video -->
-            <!-- <div id="video-lightbox" class="lightbox">
-              <div class="lightbox-content">
-                <video controls autoplay>
-                  <source
-                    src="../images/annie-he/DISCONNECT-VIDEO.mp4" 
-                    type="video/mp4" style="width: 160px; height: 360px; justify-content: center;"
-                  />
-                </video>
-                <a href="#" class="close-lightbox">&times;</a>
-              </div>
-            </div> -->
-
 <!-- Lightbox for Video -->
 <div id="video-lightbox" class="lightbox" >
   <div class="lightbox-content" style=" max-width: 440px; max-height: 660px; justify-content: center; align-items: center; ">
-    <video controls autoplay>
+    <video controls>
       <source
         src="../images/annie-he/DISCONNECT-VIDEO.mp4"
         type="video/mp4"

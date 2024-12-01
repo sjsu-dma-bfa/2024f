@@ -8,7 +8,7 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
   rel="stylesheet"
 />
-    <title>Niyana Sanders - Project</title>
+    <title>Niyana Sanders - Don't Water the Weeds</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -28,7 +28,7 @@
     <main>
       <div id="project" class="container">
         <h1 class="artwork-detail">
-          Project Title
+          Don't Water the Weeds
         </h1>
 
         <section class="project-container">
@@ -36,9 +36,7 @@
           <section class="artwork-detail">
             <h2>Artist Statement</h2>
             <p>
-              Description
-              <br />
-              Next Paragraph Desicription
+	All it takes is a glance to change the world. Since artistry is what makes everything worth looking at, my mission is to grasp the attention of humanity by putting the world’s problems on a canvas and inspiring them to be part of the solution. Particularly, as a digital artist my multimedia toolkit ranges from; 3D modeling, creative coding, video game development, graphic design, photography, videography and it continues to grow as I equip myself with more digital art processes. However, regardless of the methods that I use for production, I believe that the message is far greater than the medium.
             </p>
           </section>
 
@@ -46,56 +44,144 @@
           <section class="project-gallery">
             <div class="artwork-images">
               <!-- Clickable Images -->
-              <a href="#name-lightbox">
+              <a href="#weed1-lightbox">
                 <img
-                  src="../images/niyana-sanders/"
-                  alt=""
+                  src="../images/niyana-sanders/weed1.png"
+                  alt="weed1"
                   loading="lazy"
                 />
               </a>
-    
+
+                  <a href="#weed2-lightbox">
+                <img
+                  src="../images/niyana-sanders/weed2.png"
+                  alt="weed2"
+                  loading="lazy"
+                />
+              </a>
+
+              <a href="#weed3-lightbox">
+                <img
+                  src="../images/niyana-sanders/weed3.png"
+                  alt="weed3"
+                  loading="lazy"
+                />
+              </a>
             
+              <a href="#exhibit3-lightbox">
+                <img
+                  src="../images/niyana-sanders/exhibit3.JPG"
+                  alt="exhibit3"
+                  loading="lazy"
+                />
+                </a>
+
+                <a href="#exhibit4-lightbox">
+                  <img
+                    src="../images/niyana-sanders/exhibit4.JPG"
+                    alt="exhibit4"
+                    loading="lazy"
+                  />
+                  </a>
+
+                  <a href="#exhibit5-lightbox">
+                    <img
+                      src="../images/niyana-sanders/exhibit5.JPG"
+                      alt="exhibit5"
+                      loading="lazy"
+                    />
+                    </a>
+
+                    <a href="#exhibit6-lightbox">
+                      <img
+                        src="../images/niyana-sanders/exhibit6.JPG"
+                        alt="exhibit6"
+                        loading="lazy"
+                      />
+                      </a>
+
               <!-- Clickable Video -->
-              <a href="#video-lightbox">
+              <a href="#video-lightbox" class="video-thumbnail">
                 <video class="video" muted>
                   <source
-                    src="../images/niyana-sanders/"
+                    src="../images/niyana-sanders/display.mp4"
                     type="video/mp4"
                   />
                 </video>
+                <img
+                  class="overlay"
+                  id="play-button-image"
+                  src="../images/pink-play-button.png"
+                  alt="pink play button" 
+                  style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;"
+                />
               </a>
             
-<!-- Clickable YouTube Video Thumbnail -->
-  <!-- <a href="#youtube-lightbox" class="video-thumbnail-wrapper">
-    <img
-      class="video-thumbnail"
-      src="https://img.youtube.com/vi/VG0USXT7BCc/0.jpg"
-      alt="YouTube Thumbnail"
-    />
-  </a> -->
 </div>
 
 
             <!-- Lightbox for Images -->
-            <div id="name-lightbox" class="lightbox">
-              <div class="lightbox-content">
-                <img src="../images/niyana-sanders/" alt="" />
+            <div id="weed1-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 600px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/weed1.png" alt="weed1" />
                 <a href="#" class="close-lightbox">&times;</a>
               </div>
             </div>
-                        
-            <!-- Lightbox for Video -->
-            <!-- <div id="video-lightbox" class="lightbox">
+
+            <div id="weed2-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 600px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/weed2.png" alt="weed2" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="weed3-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 500px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/weed3.png" alt="weed3" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+                  
+            <div id="exhibit3-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 500px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/exhibit3.JPG" alt="exhibit3" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="exhibit4-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 500px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/exhibit4.JPG" alt="exhibit4" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="exhibit5-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 500px; border-radius: 50%;">
+                <img src="../images/niyana-sanders/exhibit5.JPG" alt="exhibit5" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+
+            <div id="exhibit6-lightbox" class="lightbox">
               <div class="lightbox-content">
-                <video controls autoplay>
+                <img src="../images/niyana-sanders/exhibit6.JPG" alt="exhibit6" />
+                <a href="#" class="close-lightbox">&times;</a>
+              </div>
+            </div>
+            
+            <!-- Lightbox for Video -->
+            <div id="video-lightbox" class="lightbox">
+              <div class="lightbox-content" style="max-width: 400px; border-radius: 50%;">
+                <video controls>
                   <source
-                    src="../images/niyana-sanders/"
+                    src="../images/niyana-sanders/display.mp4"
                     type="video/mp4"
                   />
                 </video>
                 <a href="#" class="close-lightbox">&times;</a>
               </div>
-            </div> -->
+            </div>
             
 <!-- Lightbox for YouTube Video -->
 <!-- <div id="youtube-lightbox" class="lightbox">
@@ -129,46 +215,6 @@
                 />
                 </a>
 
-                <a href="#exhibit2-lightbox">
-                  <img
-                    src="../images/niyana-sanders/exhibit2.JPG"
-                    alt="exhibit2"
-                    loading="lazy"
-                  />
-                  </a>
-
-                  <a href="#exhibit3-lightbox">
-                    <img
-                      src="../images/niyana-sanders/exhibit3.JPG"
-                      alt="exhibit3"
-                      loading="lazy"
-                    />
-                    </a>
-
-                    <a href="#exhibit4-lightbox">
-                      <img
-                        src="../images/niyana-sanders/exhibit4.JPG"
-                        alt="exhibit4"
-                        loading="lazy"
-                      />
-                      </a>
-
-                      <a href="#exhibit5-lightbox">
-                        <img
-                          src="../images/niyana-sanders/exhibit5.JPG"
-                          alt="exhibit5"
-                          loading="lazy"
-                        />
-                        </a>
-
-                        <a href="#exhibit6-lightbox">
-                          <img
-                            src="../images/niyana-sanders/exhibit6.JPG"
-                            alt="exhibit6"
-                            loading="lazy"
-                          />
-                          </a>
-
                           <a href="#exhibit7-lightbox">
                             <img
                               src="../images/niyana-sanders/exhibit7.JPG"
@@ -185,15 +231,13 @@
                               />
                               </a>
 
-              <!-- Clickable Video -->
-              <!-- <a href="#video-lightbox">
-                <video class="video" muted>
-                  <source
-                    src="../images/niyana-sanders/"
-                    type="video/mp4"
-                  />
-                </video>
-              </a>                 -->
+                              <a href="#exhibit2-lightbox">
+                                <img
+                                  src="../images/niyana-sanders/exhibit2.JPG"
+                                  alt="exhibit2"
+                                  loading="lazy"
+                                />
+                                </a>
 
               </div>
 
@@ -201,41 +245,6 @@
                         <div id="exhibit1-lightbox" class="lightbox">
                           <div class="lightbox-content">
                             <img src="../images/niyana-sanders/exhibit1.JPG" alt="exhibit1" />
-                            <a href="#" class="close-lightbox">&times;</a>
-                          </div>
-                        </div>
-
-                        <div id="exhibit2-lightbox" class="lightbox">
-                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
-                            <img src="../images/niyana-sanders/exhibit2.JPG" alt="exhibit2" />
-                            <a href="#" class="close-lightbox">&times;</a>
-                          </div>
-                        </div>
-
-                        <div id="exhibit3-lightbox" class="lightbox">
-                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
-                            <img src="../images/niyana-sanders/exhibit3.JPG" alt="exhibit3" />
-                            <a href="#" class="close-lightbox">&times;</a>
-                          </div>
-                        </div>
-
-                        <div id="exhibit4-lightbox" class="lightbox">
-                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
-                            <img src="../images/niyana-sanders/exhibit4.JPG" alt="exhibit4" />
-                            <a href="#" class="close-lightbox">&times;</a>
-                          </div>
-                        </div>
-
-                        <div id="exhibit5-lightbox" class="lightbox">
-                          <div class="lightbox-content"  style="max-width: 500px; max-height: 700px; border-radius: 50%;">
-                            <img src="../images/niyana-sanders/exhibit5.JPG" alt="exhibit5" />
-                            <a href="#" class="close-lightbox">&times;</a>
-                          </div>
-                        </div>
-
-                        <div id="exhibit6-lightbox" class="lightbox">
-                          <div class="lightbox-content">
-                            <img src="../images/niyana-sanders/exhibit6.JPG" alt="exhibit6" />
                             <a href="#" class="close-lightbox">&times;</a>
                           </div>
                         </div>
@@ -254,18 +263,12 @@
                           </div>
                         </div>
                 
-            <!-- Lightbox for Video -->
-            <!-- <div id="video-lightbox" class="lightbox">
-              <div class="lightbox-content">
-                <video controls autoplay>
-                  <source
-                    src="../images/niyana-sanders/"
-                    type="video/mp4"
-                  />
-                </video>
-                <a href="#" class="close-lightbox">&times;</a>
-              </div>
-            </div> -->
+                        <div id="exhibit2-lightbox" class="lightbox">
+                          <div class="lightbox-content" style="max-width: 500px; border-radius: 50%;">
+                            <img src="../images/niyana-sanders/exhibit2.JPG" alt="exhibit2" />
+                            <a href="#" class="close-lightbox">&times;</a>
+                          </div>
+                        </div>
 
                       </section>
 
@@ -290,40 +293,33 @@
               <tr>
                 <td class="bio-title">Bio</td>
                 <td class="bio-detail">
-Description
-                </td>
+                Niyana Sanders is an emerging digital media artist and social activist from Hayward, California. Sanders works through multimedia in order to bring awareness to societal and political issues. These works include pieces dealing with the Black Lives Matter movement, gun violence, and more. Niyana believes in creating art that makes a difference, while allowing herself to cope with the issues happening throughout the world. She brings forth this essence of change with mediums that include drawing, photography, videography, 3D modeling, games and the Adobe Suite. Sanders believes that the message is far greater than the medium allowing herself to work with whatever medium is available to her at that current moment. 
+                 </td>
               </tr>
               <tr>
                 <td class="contact-title">Contact</td>
                 <td class="contact-detail">
-                  <div>                  
+                  <!-- <div>                  
                     <a href="" class="portfolio-button"
                     >View Portfolio</a
-                  ></div>
+                  ></div> -->
                   <div class="social-icons">
                     <a
-                      href="mailto:name@gmail.com"
+                      href="mailto:niyanazanae2@gmail.com"
                       class="icon"
                       aria-label="Email"
                     >
                       <i class="fas fa-envelope"></i>
                     </a>
                     <a
-                      href="https://www.instagram.com/username/"
+                      href="https://www.instagram.com/niiyana_/"
                       class="icon"
                       aria-label="Instagram"
                     >
                       <i class="fab fa-instagram"></i>
                     </a>
                     <a
-                      href="https://vimeo.com/username"
-                      class="icon"
-                      aria-label="Vimeo"
-                    >
-                      <i class="fab fa-vimeo-v"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/username"
+                      href="https://www.linkedin.com/in/niyanazanae7/"
                       class="icon"
                       aria-label="LinkedIn"
                     >
