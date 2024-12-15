@@ -607,6 +607,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   overflow: visible;
+  flex-direction: column;
 }
 
 .lightbox-content img,
@@ -627,6 +628,14 @@ button:hover {
   aspect-ratio: 16 / 9; /* Maintain a proper aspect ratio for YouTube videos */
   border-radius: 10px; /* Optional: rounded corners */
   display: flex;
+}
+
+.lightbox-caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff; /* Light gray color */
+  text-align: center;
+  font-family: "Darker Grotesque", serif;
 }
 
 /* Hover Play Button for Video */
